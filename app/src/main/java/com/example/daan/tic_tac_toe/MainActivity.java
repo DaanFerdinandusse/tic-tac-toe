@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
             }
             TextView status = findViewById(R.id.status);
             status.setText(savedInstanceState.getString("status"));
+            game = (Game) savedInstanceState.getSerializable("game");
         } else {
             game = new Game();
         }
@@ -119,5 +120,6 @@ public class MainActivity extends AppCompatActivity {
         }
         TextView status = findViewById(R.id.status);
         outState.putString("status", status.getText().toString());
+        outState.putSerializable("game", game);
     }
 }
