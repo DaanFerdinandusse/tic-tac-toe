@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        app:columnCount="3">
+
+        <Button
+            android:id="@+id/b00"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="tileClicked"
+            android:text="" />
+
+        <Button
+            android:id="@+id/b01"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="tileClicked"
+            android:text=""
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/b02"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="tileClicked"
+            android:text=""
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/b03"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="tileClicked"
+            android:text=""
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/b04"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="tileClicked"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/b05"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="tileClicked"
+            android:text=""
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/b06"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="tileClicked"
+            android:text=""
+            app:layout_column="0"
+            app:layout_row="15" />
+
+        <Button
+            android:id="@+id/b07"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="tileClicked"
+            android:text=""
+            app:layout_column="1"
+            app:layout_row="15" />
+
+        <Button
+            android:id="@+id/b08"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="tileClicked"
+            android:text=""
+            app:layout_column="2"
+            app:layout_row="15" />
+
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:onClick="resetClicked"
+            android:text="reset"
+            app:layout_column="1"
+            app:layout_row="18" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Turn: Cross"
+            android:textSize="12dp"
+            app:layout_column="1"
+            app:layout_gravity="center_horizontal"
+            app:layout_row="16" />
+    </android.support.v7.widget.GridLayout>
+</LinearLayout>
